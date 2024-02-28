@@ -1,0 +1,25 @@
+name: Parallel Test
+on: push
+jobs:
+  regression-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4 #fetch code from github repo
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress regression run
+        uses: cypress-io/github-action@v6
+        with:
+          command: npm run regression-Test
+  smoke-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4 #fetch code from github repo
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress smoke run
+        uses: cypress-io/github-action@v6
+        with:
+          command: npm run smoke-Test
