@@ -1,0 +1,32 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "I want to login into the site",
+    "line": 1,
+    "id": "i-want-to-login-into-the-site",
+    "tags": [],
+    "uri": "signup.feature",
+    "elements": [
+      {
+        "id": "i-want-to-login-into-the-site;login-test-case",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Login Test Case",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I navigate to the website",
+            "result": {
+              "status": "passed",
+              "duration": 7486000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

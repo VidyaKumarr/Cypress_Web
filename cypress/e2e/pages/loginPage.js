@@ -6,7 +6,8 @@ export class loginPage {
 login()
  {
 
-    cy.visit('https://www.amazon.in/')
+    cy.visit('')
+    cy.printTitle()
  }
 
 
