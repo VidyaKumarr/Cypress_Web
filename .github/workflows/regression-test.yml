@@ -11,7 +11,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          command: npm run testreport
+          command: npm run testreport2
       - uses: actions/upload-artifact@v2
         if: failure()
         with:
@@ -26,6 +26,6 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: HTML_Report
-          path: cypress/reports/Results
+          path: cypress/reports/Result
           retention-days: 2
 

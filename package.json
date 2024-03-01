@@ -14,8 +14,8 @@
     "regression-Test" : "npx cypress run --spec=cypress/e2e/feature/Regression",
     "smoke-Test" : "npx cypress run --spec=cypress/e2e/feature/Smoke",
     "testreport" : "(rmdir /s/q cypress\\reports && npm run regression-Test || npm run cucumber-report)",
-    "testreport1" : "npm run test || npm run cucumber-report"
-
+    "testreport1" : "npm run test || npm run cucumber-report",
+    "testreport2" : "if exist cypress\\reports (rmdir /S /Q cypress\\reports && npm run test || npm run cucumber-report) else npm run test || npm run cucumber-report"
   },
   "author": "",
   "license": "ISC",
