@@ -8,11 +8,14 @@
     "delete-existingJsonReports": "rmdir /S/Q cypress\\reports\\cucumber-json\\*.json",
     "delete-reportFolder": "if exist cypress\\reports rmdir /S/Q cypress\\reports",
     "test": "npx cypress run --e2e --browser chrome ",
-    "TestWithReportGeneration": "npm run delete-reportFolder || npm run test || npm run cucumber-report || npm run delete-existingJsonReports",
+    "TestWithReportGeneration": "npm run delete-reportFolder ; npm run test ; npm run cucumber-report ; npm run delete-existingJsonReports",
     "stage-Test": "npx cypress run --config-file stage.config.js",
     "prod-Test": "npx cypress open --config-file prod.config.js",
     "regression-Test" : "npx cypress run --spec=cypress/e2e/feature/Regression",
-    "smoke-Test" : "npx cypress run --spec=cypress/e2e/feature/Smoke"
+    "smoke-Test" : "npx cypress run --spec=cypress/e2e/feature/Smoke",
+    "testreport" : "(rmdir /s/q cypress\\reports && npm run regression-Test || npm run cucumber-report)",
+    "testreport1" : "npm run test || npm run cucumber-report"
+
   },
   "author": "",
   "license": "ISC",

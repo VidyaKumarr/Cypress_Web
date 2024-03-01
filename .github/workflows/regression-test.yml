@@ -12,3 +12,20 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           command: npm run regression-Test
+      - uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+         name: cypress-screenshots
+         path: ./cypress/screenshots
+      - uses: actions/upload-artifact@v2
+        if: always()
+        with:
+         name: cypress-videos
+         path: ./cypress/videos
+      - name: Upload Report on GitHub Actions
+        uses: actions/upload-artifact@v2
+        with:
+          name: HTML_Report
+          path: cypress/reports/Results
+          retention-days: 2
+
