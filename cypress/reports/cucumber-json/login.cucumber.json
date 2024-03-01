@@ -21,8 +21,9 @@
             "line": 3,
             "name": "I navigate to the website",
             "result": {
-              "status": "passed",
-              "duration": 9068000000
+              "status": "failed",
+              "duration": 388000000,
+              "error_message": "CypressError: `cy.readFile(\"C:\\Users\\vidya\\OneDrive\\Desktop\\Web\\Cypress_Web\\cypress\\screenshots/login.feature/I want to login into the site -- Login Test Case (failed).png\")` timed out.\n\nhttps://on.cypress.io/readfile\n\nBecause this error occurred during a `after each` hook we are skipping all of the remaining tests.\n    at cypressErr (https://www.amazon.in/__cypress/runner/cypress_runner.js:75257:18)\n    at Object.cypressErrByPath (https://www.amazon.in/__cypress/runner/cypress_runner.js:75262:10)\n    at $Command.readFile (https://www.amazon.in/__cypress/runner/cypress_runner.js:119392:88)\n    at cyFn (https://www.amazon.in/__cypress/runner/cypress_runner.js:138401:19)\nFrom Your Spec Code:\n    at Context.eval (cypress/support/e2e.js:48:14)"
             }
           }
         ]
