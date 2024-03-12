@@ -1,0 +1,33 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "I want to login into the site",
+    "line": 1,
+    "id": "i-want-to-login-into-the-site",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "i-want-to-login-into-the-site;login-test-case",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Login Test Case",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I navigate to the website",
+            "result": {
+              "status": "failed",
+              "duration": 8321000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#login`, but never found it.\n    at loginPage.login (cypress/e2e/pages/loginPage.js:18:11)\n    at Context.eval (cypress/e2e/step_definitions/loginSteps.js:7:17)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
